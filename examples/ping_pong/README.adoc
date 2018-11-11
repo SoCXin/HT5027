@@ -1,0 +1,34 @@
+= Ping pong example
+
+The ping pong example is a stress test application for the mesh, meant to be
+used with the Python 2.7 script ping_pong.py, located under ./scripts/. It
+demonstrates the mesh's ability to handle many-to-one applications.
+
+== How does it work?
+
+Every device in the mesh gets assigned a single handle, which they push value
+updates to. The device with assigned handle 0 has a server role, and responds
+to all other device's updates with a 0-length ack packet on the other devices'
+handles. As soon as the other devices receive an ack on their handle, they turn
+around to send a new packet on their assigned handle. This way, the central
+device will act as a sort of ping server, acking every message it gets.
+
+The immediate response mechanism on both sides causes the ping clients to
+operate as fast as they possibly can, displaying the Open Mesh's behavior in
+heavy-load many-to-one type scenarios.
+
+== ping_pong.py requirements
+
+- Python 2.7
+- pyserial 2.7
+
+NOTE: On Windows, the python script looks up all devices with the segger ID in
+the registry. If you have a different set of devices, just remove this
+filtering on line 55, and use the non-Windows-code on line 57 instead.
+
+
+== Usage
+
+Build, then flash all devices in the network with the ping_pong firmware. Run
+the ping_pong.py script without parameters. The script will output a list of
+all COM-ports it could find, and the handle they've been assigned.
