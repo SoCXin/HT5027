@@ -1,21 +1,27 @@
-﻿[![sites](mcuyun/mcuyun.png)](http://www.mcuyun.com)
+﻿# [nRF51](https://github.com/mcuyun/NRF51) 
 
-# [nRF51](https://github.com/mcuyun/nRF51) 
+[![sites](SoC/SoC.png)](http://www.qitas.cn) 
 
-#### 更多关于：[mcuyun](https://github.com/mcuyun/whyme) 可访问 www.mcuyun.com
+####  qitas@qitas.cn
 
-## 简介
+#### 归属：[cortex M0](https://github.com/sochub/CM0)
 
-nRF51工程代码
+## [描述](https://github.com/sochub/NRF51/wiki) 
+
+NRF51是上一代Nordic BLE SoC芯片
+
+#### [文档资料](docs/)
+
+参考设计和数据手册
+
+#### [工程资源](src/)
+
+各种源码资源
+
+#### [开发工具](tools/)
+
+包括烧写脚本工具
 
 ---
 
-## 组成
-
-
-
----
-
-##  www.mcuyun.com   |   qitas@qitas.cn
-
-
+###  [SoC开发平台](http://www.qitas.cn)   
