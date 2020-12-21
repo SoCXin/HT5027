@@ -1,22 +1,21 @@
 {
-    "type":"MCU",
-    "name":"SM51F003",
-    "tags": ["LOWPIN"],
-    "series":["SM51F003"],
-    "description":"LogicGreen 8051 OTP MCU",
+    "type":"SoC",
+    "name":"HT5027",
+    "series":["HT5023","HT5025","HT5027","HT5029"],
+    "description":"hitrendtech Cortex M0 SoC",
     "peripheral": ["TIM","PWM"],
-    "package":["TSSOP20"],
-    "SRAM":128,
-    "OTP":2048,
+    "package":["LQFP100","LQFP80","LQFP64","LQFP48"],
+    "SRAM":32000,
+    "Flash":128000,
     "Core": {
         "num": 1,
-        "architecture":"8051",
-        "Freq":16
+        "architecture":"Cortex M0",
+        "Freq":39.32
     },
     "Level": {
         "main":1,
         "sub":12,
-        "price":0.7
+        "price":7
     },
     "GPIO": {
         "num": [13,17],
@@ -53,8 +52,8 @@
         "ESD": "4KV"
     },
     "vendor":"sinomicon",
-    "url":"http://www.SoC.xin/SM51F003",
-    "repo":"https://github.com/SoCXin/SM51F003",
+    "url":"http://www.SoC.xin/HT5027",
+    "repo":"https://github.com/SoCXin/HT5027",
     "homepage": "http://www.sinomicon.cn/prod_view.aspx?TypeId=65&Id=177&FId=t3:65:3",
     "version":"1.0.0"
 }
