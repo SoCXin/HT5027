@@ -49,11 +49,15 @@
         "Imax": 120
     },
     "EMC": {
-        "ESD": "4KV"
+        "EFT": 2000,
+        "ESD": 4000
+    },
+    "manufacturer": {
+        "vendor":"hitrendtech",
+        "url": "http://www.hitrendtech.com/"
     },
     "vendor":"sinomicon",
     "url":"http://www.SoC.xin/HT5027",
     "repo":"https://github.com/SoCXin/HT5027",
-    "homepage": "http://www.sinomicon.cn/prod_view.aspx?TypeId=65&Id=177&FId=t3:65:3",
     "version":"1.0.0"
 }
