@@ -22,7 +22,7 @@ HT5027配有43个GPIO、3路UART、4个外部中断，LCD支持4x24/6x22/8x20段
 
 ### 关键特性
 
-* 256K Flash+1K Information Block、32K SRAM
+* 256K Flash、1K Information Block、32K SRAM
 * 持断相防窃电功能的硬件 EMU 模块
 * 工作电压范围：2.2V ~ 5.5V
 * 工作温度范围：-40℃ ~ 85℃
