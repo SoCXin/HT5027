@@ -1,63 +1,34 @@
 {
     "type":"SoC",
     "name":"HT5027",
-    "series":["HT5023","HT5025","HT5027","HT5029"],
+    "title": "hitrendtech HT5027",
     "description":"hitrendtech Cortex M0 SoC",
-    "peripheral": ["TIM","PWM"],
-    "package":["LQFP100","LQFP80","LQFP64","LQFP48"],
-    "SRAM":32000,
-    "Flash":128000,
     "Core": {
         "num": 1,
-        "architecture":"Cortex M0",
-        "Freq":39.32
-    },
-    "Level": {
-        "main":1,
-        "sub":12,
-        "price":7
-    },
-    "GPIO": {
-        "num": [13,17],
-        "irq": 4
-    },
-    "ADC": {
-        "num": 1,
-        "channel": 6,
-        "resolution": 12,
-        "rate": 1024
-    },
-    "TIM": {
-        "resolution":[8,8,16]
-    },
-    "PWM": {
-        "num": 2,
-        "resolution": 8,
-        "rate": 256
-    },
-    "CLK": {
-        "HSE": [1000,16000],
-        "HSI": [16000],
-        "LSI": [32],
-        "PLL": [16000,16000],
-        "DIV": [1,128],
-        "accuracy": 0.02
-    },
-    "PWR": {
-        "VDD": [2500,5500],
-        "IDD": [2.21,14.31],
-        "Imax": 120
-    },
-    "EMC": {
-        "EFT": 2000,
-        "ESD": 4000
+        "type":"Cortex M0",
+        "Freq":39.32,
+        "DMIPS": 34,
+        "CoreMark": 42
     },
     "manufacturer": {
         "vendor":"hitrendtech",
-        "url": "http://www.hitrendtech.com/"
+        "homepage":"http://www.hitrendtech.com"
     },
-    "vendor":"sinomicon",
-    "url":"http://www.SoC.xin/HT5027",
-    "repo":"https://github.com/SoCXin/HT5027",
-    "version":"1.0.0"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/HT5027.git"
+    },
+    "version":"1.0.0",
+    "series":["HT5023","HT5025","HT5027","HT5029"],
+    "package":["LQFP100","LQFP80","LQFP64","LQFP48"],
+    "peripheral": ["PD","ADC","USART","SPI","I2C","I2S"],
+    "keywords": [
+        "dev-platform",
+        "ARM",
+        "Cortex-M",
+        "STMicroelectronics",
+        "STM32",
+        "ADC","USART","I2C","RTC","SPI",
+        "3.6V","1.8V"
+    ]
 }
